@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             resultView.setText(getString(R.string.wrong_palindrom));
         }else{
 
-            if(isPladindrome(palindrom)){
+            if(isPladindrom(palindrom)){
                 resultView.setTextColor(Color.GREEN);
                 resultView.setText(getString(R.string.is_palindrom));
             }else{
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**Check if string is a palindrom*/
-    public static boolean isPladindrome(String str){
+    public static boolean isPladindrom(String str){
         return str.equals(new StringBuilder(str).reverse().toString());
     }
 }
