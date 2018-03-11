@@ -3,4 +3,7 @@
     <string name="enter_palindrom">Palindrom eingeben</string>
     <string name="button_check">Check</string>
     <string name="description">- Palindrom >= 5 Zeichen</string>
+    <string name="wrong_palindrom">Ungültige Länge!</string>
+    <string name="is_palindrom">Eingabe ist ein Palindrom!</string>
+    <string name="no_palindrom">Eingabe ist kein Palindrom!</string>
 </resources>

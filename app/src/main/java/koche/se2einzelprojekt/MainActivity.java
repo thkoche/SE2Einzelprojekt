@@ -18,22 +18,22 @@ public class MainActivity extends AppCompatActivity {
     /**Called when the user taps the Check button */
     public void checkPladindrom(View view){
 
-        EditText editPalindorm = (EditText) findViewById(R.id.editPalindrom);
+        EditText editPalindorm = findViewById(R.id.editPalindrom);
         String palindrom = editPalindorm.getText().toString();
 
         TextView resultView = findViewById(R.id.resultView);
 
-        if(palindrom.length() < 5 || palindrom == null){
+        if(palindrom.length() < 5){
             resultView.setTextColor(Color.RED);
-            resultView.setText("Unzulässige Länge!");
+            resultView.setText(getString(R.string.wrong_palindrom));
         }else{
 
-            if(isPladindrome(palindrom) == true){
+            if(isPladindrome(palindrom)){
                 resultView.setTextColor(Color.GREEN);
-                resultView.setText("Eingabe ist ein Palindrom!");
+                resultView.setText(getString(R.string.is_palindrom));
             }else{
                 resultView.setTextColor(Color.RED);
-                resultView.setText("Eingabe ist kein Palindrom!");
+                resultView.setText(getString(R.string.no_palindrom));
             }
         }
     }
